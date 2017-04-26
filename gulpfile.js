@@ -42,6 +42,7 @@ var paths = {
 
     //SOURCE DIRECTORIES
     origin: './Source/',
+    origin_css: './Source/css/',
     origin_maps: './maps/',
     origin_fonts: './Source/assets/fonts/',
     origin_modules: './Source/assets/modules/',
@@ -269,7 +270,7 @@ gulp.task('WatcherSASS', function () {
         outputStyle: 'expanded'
     }))
     .pipe(sourcemaps.write(paths.origin_maps))
-    .pipe(gulp.dest(paths.origin));
+    .pipe(gulp.dest(paths.origin_css));
 });
 
 //Watcher Tasks
